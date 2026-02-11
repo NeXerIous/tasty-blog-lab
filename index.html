@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Kaushan+Script&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="headbar-group">
+        <div class="container headbar-content">
+            <div class="tasty-blog-text-button">Tasty Blog</div>
+            
+            <nav class="text-buttons-group">
+                <a href="#" class="home-text-button">Home</a>
+                <a href="#" class="recipes-text-button">Recipes</a>
+                <a href="#" class="classes-text-button">Classes</a>
+                <a href="#" class="about-text-button">About</a>
+            </nav>
+
+            <div class="headbar-icons">
+                <button class="icon-btn">
+                    <img src="images/search-icon.svg" alt="Поиск">
+                </button>
+                <button class="icon-btn">
+                    <img src="images/cart-icon.svg" alt="Корзина">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-info-group">
+            <div class="container hero-layout">
+                <div class="main-text-group">
+                    <h1>
+                        <span class="cook-like-a-text">Cook like a</span><br>
+                        <span class="master-chef-text">Master Chef</span>
+                    </h1>
+                    <p class="description-text">
+                        Discover hundreds of delicious recipes, from quick weeknight meals to gourmet delights. Join our community and start your culinary journey today.
+                    </p>
+                    <div class="main-buttons-group">
+                        <button class="view-recipes-button-rectangle">View Recipes</button>
+                        <button class="about-us-button-rectangle">About us &rarr;</button>
+                    </div>
+                </div>
+                <div class="main-image-wrapper">
+                    <img src="images/hero-image.png" class="main-image" alt="Food table">
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-group">
+            <div class="container">
+                <div class="category-buttons-group">
+                    <button class="category-btn active">BREAKFAST</button>
+                    <button class="category-btn">VEGAN</button>
+                    <button class="category-btn">MEAT LOVER</button>
+                    <button class="category-btn">DESSERTS</button>
+                    <button class="category-btn">SEASONAL</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="dishes-section">
+            <div class="container dishes-grid">
+                
+                <article class="dish-card">
+                    <div class="dish-photo-wrapper">
+                        <span class="category-tag">Dinner</span>
+                        <img src="images/dish-1.jpg" class="dish-photo" alt="Avocado Toast">
+                    </div>
+                    <div class="dish-info-background-rectangle">
+                        <div class="rating-row">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-number">(4.8)</span>
+                        </div>
+                        <h3 class="dish-title">Avocado Egg Tostada</h3>
+                        <p class="dish-author">By Maria S.</p>
+                        
+                        <div class="dish-underbar-group">
+                            <div class="meta-item">
+                                <img src="images/clock-icon.svg" alt="time">
+                                <span>15 min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="images/level-icon.svg" alt="level">
+                                <span>Easy</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="dish-card">
+                    <div class="dish-photo-wrapper">
+                        <span class="category-tag">Lunch</span>
+                        <img src="images/dish-2.jpg" class="dish-photo" alt="Caesar Salad">
+                    </div>
+                    <div class="dish-info-background-rectangle">
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-number">(5.0)</span>
+                        </div>
+                        <h3 class="dish-title">Shrimp Caesar Salad</h3>
+                        <p class="dish-author">By Dmitry K.</p>
+                        
+                        <div class="dish-underbar-group">
+                            <div class="meta-item">
+                                <img src="images/clock-icon.svg" alt="time">
+                                <span>10 min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="images/level-icon.svg" alt="level">
+                                <span>Easy</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+/* --- Базовые настройки --- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+/* Контейнер, чтобы контент был по центру, как на макете */
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* --- Шапка (Headbar) --- */
+.headbar-group {
+    background-color: #ffe32a; 
+    opacity: 0.95; 
+    height: 120px; 
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    margin-bottom: 40px;
+}
+
+.headbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.tasty-blog-text-button {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.text-buttons-group {
+    display: flex;
+    gap: 40px;
+}
+
+.text-buttons-group a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 24px;
+}
+
+.headbar-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- Главный блок (Hero) --- */
+.main-info-group {
+    margin-bottom: 60px;
+}
+
+.hero-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cook-like-a-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.master-chef-text {
+    font-family: 'Satisfy', cursive;
+    font-size: 48px;
+    color: #ffe32a; 
+    padding: 0 5px;
+    text-shadow: 1px 1px 0 #000; 
+}
+
+.description-text {
+    font-size: 18px;
+    color: #828282;
+    line-height: 1.5;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.main-buttons-group {
+    display: flex;
+    gap: 20px;
+}
+
+.view-recipes-button-rectangle {
+    background-color: #ffe32a;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.about-us-button-rectangle {
+    background-color: #231d26;
+    color: #ffe437;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.main-image {
+    width: 580px;
+    border-radius: 57px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- Категории --- */
+.categories-group {
+    background-color: #ffffff; 
+    padding: 11px 0;
+    margin-bottom: 50px; 
+    width: 100%; 
+}
+
+.category-buttons-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-btn:hover, .category-btn.active {
+    background-color: #eee;
+    border-color: #ccc;
+}
+
+/* --- Карточки --- */
+.dishes-grid {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+.dish-card {
+    background: #fff;
+    width: 551px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.dish-photo-wrapper {
+    position: relative;
+    height: 284px;
+}
+
+.dish-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.85);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dish-info-background-rectangle {
+    padding: 25px;
+}
+
+.rating-row {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.rating-number {
+    color: #000;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.dish-title {
+    font-size: 28px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.dish-author {
+    color: #adadad;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.dish-underbar-group {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #777;
+    font-weight: 600;
+}
+
+.meta-item img {
+    height: 20px;
+}
+
+/* --- АНИМАЦИИ --- */
+
+/* 1. Эффекты для кнопок */
+button, .category-btn, .view-recipes-button-rectangle, .about-us-button-rectangle {
+    transition: all 0.3s ease; 
+}
+
+/* При наведении кнопка чуть увеличивается и меняет курсор */
+.view-recipes-button-rectangle:hover, 
+.about-us-button-rectangle:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(255, 227, 42, 0.4); 
+}
+
+/* 2. Анимация карточки блюда */
+.dish-card {
+    transition: all 0.4s ease; 
+    cursor: pointer;
+}
+
+.dish-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+}
+
+/* 3. Зум картинки внутри карточки */
+.dish-photo-wrapper {
+    overflow: hidden; 
+    border-radius: 20px 20px 0 0; 
+}
+
+.dish-photo {
+    transition: transform 0.5s ease; 
+}
+
+.dish-card:hover .dish-photo {
+    transform: scale(1.1); 
+}
+
+/* 4. Классы для JS-анимации появления (Скролл) */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: all 1s ease; 
+}
+
+.reveal.active {
+    opacity: 1; 
+    transform: translateY(0); 
+}
